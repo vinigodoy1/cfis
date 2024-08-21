@@ -1,0 +1,17 @@
+CFIS: Combined Feature Importance Score
+
+Introdução
+O CFIS (Combined Feature Importance Score) é uma métrica desenvolvida para avaliar a importância das features em problemas de aprendizado de máquina. Ele combina várias abordagens para calcular a importância das features, incluindo a importância de permutação, coeficientes de modelos de regressão e correlação com a variável alvo.
+
+Objetivo
+O objetivo do CFIS é fornecer uma maneira abrangente de avaliar a importância das features em um modelo de aprendizado de máquina. Ao combinar diferentes métricas, o CFIS pode capturar diferentes aspectos da importância das features e fornecer uma visão mais completa sobre como cada feature contribui para a predição do modelo.
+
+Métodos
+
+3.1. Importância de Permutação A importância de permutação é calculada embaralhando os valores de uma feature e medindo como isso afeta o desempenho do modelo. O CFIS usa a média das importâncias de permutação para cada feature como uma métrica de importância.
+
+3.2. Coeficientes de Modelos de Regressão Os coeficientes de modelos de regressão, como regressão logística, fornecem uma medida da contribuição de cada feature para a predição do modelo. O CFIS normaliza esses coeficientes e os utiliza como uma métrica de importância.
+
+3.3. Correlação com a Variável Alvo A correlação entre cada feature e a variável alvo é calculada para avaliar o relacionamento entre elas. O CFIS incorpora essa correlação como parte de sua pontuação combinada.
+
+3.4. CFIS: Pontuação Combinada O CFIS é calculado como a média das métricas de importância de permutação, coeficientes de regressão e correlações. Isso proporciona uma medida abrangente da importância de cada feature.
